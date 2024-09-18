@@ -27,13 +27,8 @@ namespace DroidQR_Maker_Lab
 
             Bitmap qrCodeImage = qrCode.GetGraphic(20);
 
-            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "QR_Codes");
-            Directory.CreateDirectory(folderPath); 
-
             string fileName = $"Droid_{DroidID}_QR.png";
             string filePath = Path.Combine(folderPath, fileName);
-
-
 
             qrCodeImage.Save(filePath);
             Console.WriteLine($"QR Code for Droid {DroidID} saved to {filePath}");
