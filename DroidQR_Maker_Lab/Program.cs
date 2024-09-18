@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QRCoder;
+using System.IO;
+using System.Drawing;
 
 namespace DroidQR_Maker_Lab
 {
@@ -20,7 +23,7 @@ namespace DroidQR_Maker_Lab
                 string droidID = Console.ReadLine();
 
                 // Create QR Code (To be completed by students)
-                DroidQRMaker.DroidQR droidQR = new DroidQRMaker.DroidQR(droidID);
+                DroidQR_Maker_Lab.DroidQR droidQR = new DroidQR_Maker_Lab.DroidQR(droidID);
                 droidQR.GenerateQRCode();
 
                 // Ask if they want to generate another QR Code
