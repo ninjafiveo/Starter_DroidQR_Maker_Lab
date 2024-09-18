@@ -26,6 +26,7 @@ namespace DroidQR_Maker_Lab
                 // Ask if they want to generate another QR Code
                 Console.WriteLine("Would you like to generate another QR Code? (y/n)");
                 string response = Console.ReadLine().ToLower();
+                //added
                 keepGoing = response == "y";
             }
 
